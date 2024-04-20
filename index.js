@@ -9,7 +9,7 @@ import { Strategy } from "passport-local";
 const app = express();
 const port = 3000;
 const saltRounds = 10;
-
+// Use this website and documentation to understand fully ----> https://www.passportjs.org/
 app.use(session({
   secret:"TOPSECRETWORD" , // this thing we can keep anything
   resave:false,
