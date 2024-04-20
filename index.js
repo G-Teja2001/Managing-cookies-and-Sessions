@@ -135,10 +135,10 @@ passport.use(new Strategy(async function verify(username, password,cb){
   }
 }) );
 
-passport.serializeUser((user,cb)=>{
+passport.serializeUser((user,cb)=>{ // This is used to store cookie session 
   cb(null,user)
 });
-passport.deserializeUser((user,cb)=>{
+passport.deserializeUser((user,cb)=>{ 
   cb(null,user)
 });
 
